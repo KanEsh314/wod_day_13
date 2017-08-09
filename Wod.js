@@ -1,6 +1,9 @@
 function gred(score)
 {
+<<<<<<< HEAD
 	var gr = [];
+=======
+>>>>>>> f1652f1a44096c261a7c34f1b4ee02fd6d9c121c
 	for(var i = 0; i < score.length; i++)
 	{
 		var scin = score[i];
@@ -33,4 +36,8 @@ function gred(score)
 	}
 	return gr;
 }
+<<<<<<< HEAD
 document.write(gred([73,67,38,33]));
+=======
+gred([4,73,67,38,33]);
+>>>>>>> f1652f1a44096c261a7c34f1b4ee02fd6d9c121c
