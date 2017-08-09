@@ -1,7 +1,5 @@
 function gred(score)
 {
-	var rou;
-
 	for(var i = 0; i < score.length; i++)
 	{
 		var scin;
