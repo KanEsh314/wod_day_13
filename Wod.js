@@ -1,30 +1,36 @@
 function gred(score)
 {
-	var rou;
-
+	var gr = [];
 	for(var i = 0; i < score.length; i++)
 	{
-		var scin;
-		var spr;
+		var scin = score[i];
 
-		if(score[i] >= 38)
+		if(scin >= 38)
 		{
-			spr = score[i];
-			//document.write(spr);
-			var a = spr+1;
-			var b = spr+2;
+			var a = scin+1;
+			var b = scin+2;
 			var res;
 			if(a%5==0)
 			{
 				res = a;
-				document.write(res+"<br>");
+				//document.write(res+"<br>");
 			}
 			else if (b%5==0)
 			{
 				res = b;
-				document.write(res+"<br>");
+				//document.write(res+"<br>");
+			}
+			else
+			{
+				res = scin;
+				//document.write(scin+"<br>");
 			}
 		}
+		else{
+			res = scin;
+		}
+		gr.push(res);
 	}
+	return gr;
 }
-gred([4,73,67,38,33]);
+document.write(gred([73,67,38,33]));
